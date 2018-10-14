@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from "./components/navbar";
+import Jumbotron from "./components/jumbotron";
+// import card from "./components/card";
+import Footer from "./components/footer";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+<div>
+  <Navbar />
+  <Jumbotron backgroundimage="https://assets1.ignimgs.com/thumbs/userUploaded/2018/8/21/8o4mojba-1534896773944.jpeg" />
+  <Footer />
+</div>
+
+
+);
+
 
 export default App;
