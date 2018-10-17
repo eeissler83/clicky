@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './App.css';
 import Navbar from "./components/navbar";
 import Jumbotron from "./components/jumbotron";
+import Wrapper from "./components/wrapper";
 import Cards from "./components/cards";
 import Footer from "./components/footer";
 import Cops from "./cops.json";
@@ -63,7 +64,7 @@ class App extends Component {
 
 
 
-//the order of components to be rendered: navbar, jumbotron, cards, footer 
+//the order of components to be rendered: navbar, jumbotron, wrapper, cards, footer 
 render() {
   return (
     <div>
@@ -71,7 +72,7 @@ render() {
         score={this.state.score}
       />
       <Jumbotron />
-      <div className="wrapper">
+      <Wrapper>
         {this.state.cops.map(cops => (
           <Cards
             imageClick={this.imageClick}
@@ -80,7 +81,7 @@ render() {
             image={cops.image}
           />
         ))}
-      </div>
+      </Wrapper>
       <Footer />
     </div>
   );
