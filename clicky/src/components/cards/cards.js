@@ -1,9 +1,9 @@
 //sets up the reusable FriendCard component
 import React from "react";
-import "./card.css";
+import "./cards.css";
 
 //pass the image into each card so all 12 are rendered
-const Card = props => (
+const Cards = props => (
   <div className="card" onClick={props.imageClick}>
     <div className="img-container">
       <img alt={props.image.replace(".jpg", "")} src={require("../../images/" + props.image)} />
@@ -11,4 +11,4 @@ const Card = props => (
   </div>
 );
 
-export default Card;
+export default Cards;
