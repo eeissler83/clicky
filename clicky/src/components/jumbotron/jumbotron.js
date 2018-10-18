@@ -10,11 +10,11 @@ const jumbotronStyle = {
 }
 
 const Jumbotron = () =>
-      <div className="card-panel grey lighten-2" style={jumbotronStyle}>
+      <div id="main" style={jumbotronStyle}>
         <div className="container">
           <h1>Paradise PD</h1>
           {/* <h2>Memory Game</h2> */}
-          <h5>Click on an image to earn points, but don't click on any more than once!</h5>
+          <h4>Click on an image to earn points, but don't click on any more than once!</h4>
         </div>
        </div>
 export default Jumbotron;

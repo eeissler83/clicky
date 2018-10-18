@@ -1,5 +1,5 @@
 .header{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     background-image: url("https://assets1.ignimgs.com/thumbs/userUploaded/2018/8/21/8o4mojba-1534896773944.jpeg");
 	position: relative;
 	width: 100%;
@@ -12,13 +12,24 @@ h1{
     padding: 0px 0 0px 0; 
     color: orange;
     /* background-color: #232323; */
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+    margin: auto;
 }
 
 h2{
 	text-align: center;
 	padding-bottom: 20px;
 }
-h5{
+h4{
     text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+
+}
+#main{
+    background-image: url("https://assets1.ignimgs.com/thumbs/userUploaded/2018/8/21/8o4mojba-1534896773944.jpeg");
+    background-repeat: repeat-x;
+    background-position: center;
+    -webkit-background-size: contain;
+   
+    
 }

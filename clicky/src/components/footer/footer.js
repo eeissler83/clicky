@@ -3,8 +3,9 @@ import React from "react";
 import "./footer.css";
 
 const Footer = () => (
+
 	<header className = "footer">
-		<p>A game by Eissler Consulting LLC</p>
+		<p>© 2014 Copyright Eissler Consulting</p>
 	</header>
 );
 

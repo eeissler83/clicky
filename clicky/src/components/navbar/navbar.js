@@ -4,9 +4,9 @@ import "./navbar.css";
 const Navbar = () =>
         <nav className="navbar navbar-default navbar-fixed-top">
            <ul>
-            <li className="itemLeft">Memory Game</li>
+            <li className="itemLeft">Score: </li>
             <li className="itemCenter"></li>
-            <li className="itemRight">Score: {this.props.score}</li>
+            {/* <li className="itemRight">Score: {this.state.score}</li> */}
           </ul>
         </nav>
       
