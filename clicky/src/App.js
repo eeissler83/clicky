@@ -25,7 +25,7 @@ class App extends Component {
 //if you click on a cop that has already been selected, the game is reset and cards reordered
     if (CopsAlreadyClicked) {
       this.setState({
-        cops: this.state.cops.sort(function(a, b) {
+        cops: this.state.Cops.sort(function(a, b) {
           return 0.5 - Math.random();
         }),
         clickedCops: [],
@@ -37,7 +37,7 @@ class App extends Component {
     } else {
       this.setState(
         {
-          cops: this.state.cops.sort(function(a, b) {
+          cops: this.state.Cops.sort(function(a, b) {
             return 0.5 - Math.random();
           }),
           clickedCops: this.state.clickedCops.concat(
@@ -50,7 +50,7 @@ class App extends Component {
           if (this.state.score === 12) {
             alert("Yay! You Win!");
             this.setState({
-              cops: this.state.cops.sort(function(a, b) {
+              cops: this.state.Cops.sort(function(a, b) {
                 return 0.5 - Math.random();
               }),
               clickedCops: [],
@@ -73,7 +73,7 @@ render() {
       />
       <Jumbotron />
       <Wrapper>
-        {this.state.cops.map(cops => (
+        {this.state.Cops.map(cops => (
           <Cards
             imageClick={this.imageClick}
             id={cops.id}
